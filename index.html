@@ -24,10 +24,10 @@
               <nav class="header__top-medium-menu">
                 <ul class="header__top-medium-menu-grid">
                   <li><a href="#">Главная</a></li>
-                  <li><a href="#">Преподаватели</a></li>
-                  <li><a href="#">О студии</a></li>
-                  <li><a href="#">Контакты</a></li>
-                  <li><a href="#">+7 901 745-39-29</a></li>
+                  <li><a href="#teachers">Преподаватели</a></li>
+                  <li><a href="#about_us">О студии</a></li>
+                  <li><a href="#contacts">Контакты</a></li>
+                  <li><a href="tel:+79017453929">+7 901 745-39-29</a></li>
                 </ul>
               </nav>
             </div>
@@ -45,7 +45,7 @@
                   Студия растяжки в центре Москвы для тех, кто хочет красивое
                   тело
                 </h4>
-                <a class="btn" href="#">Пробное занятие</a>
+                <a class="btn" href="#form">Пробное занятие</a>
               </div>
               <div class="header__title-flex-right">
                 <img src="img/header_image.png" alt="Title Image" />
@@ -79,7 +79,7 @@
       </div>
     </section>
     <!-- teachers -->
-    <section class="teachers">
+    <section id="teachers" class="teachers">
       <div class="container">
         <div class="teachers__title-wrapper">
           <div class="teachers__title">
@@ -109,7 +109,7 @@
       </div>
     </section>
     <!-- about_studio -->
-    <section class="about_stidio">
+    <section id="about_us" class="about_stidio">
       <div class="container">
         <div class="about_stidio-title">
           <h2>О студии</h2>
@@ -135,7 +135,71 @@
       <div class="container">
         <div class="block">
           <p class="text">Расписание занятий</p>
-          <a class="btn" href="#">Посмотреть</a>
+          <a class="btn" href="#contacts">Посмотреть</a>
+        </div>
+      </div>
+    </section>
+    <!-- contacts -->
+    <section id="contacts" class="contacts">
+      <div class="container">
+        <div class="contacts teachers__title-wrapper">
+          <div class="contacts teachers__title">
+            <h2>Контакты</h2>
+          </div>
+        </div>
+        <div class="block">
+          <h2>Адрес студии в Москве</h2>
+          <div class="contacts__flex">
+            <img src="img/map.png" alt="Address" />
+            <div class="contacts__flex-address">
+              <ul>
+                <li class="first">ул. Садовая-Самотечная, д.4</li>
+                <li>Телефон +7 901 745-39-29,</li>
+                <li>E-mail 33belgorod@bk.ru</li>
+                <li>Время работы:</li>
+                <li>Пн.-Пт. — 8:00–22:30</li>
+                <li>Сб.-Вс. — 10:00–21:00</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- request -->
+    <section class="request">
+      <div class="container">
+        <ul class="request__content">
+          <li>
+            <p class="text">Пока Вы сомневаетесь,<br />другие - уже умеют!</p>
+          </li>
+          <li><p class="text">Запишитесь прямо сейчас!</p></li>
+          <li>
+            <p class="text">
+              Первая пробная тренировка в<br />студии всего 300 рублей!
+            </p>
+          </li>
+        </ul>
+        <div id="form" class="form">
+          <div class="form__flex">
+            <input type="text" id="phone" placeholder="+7 000 000 00 00" />
+            <input type="text" placeholder="Имя" />
+            <a class="btn" href="#">Хочу на тренировку</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <section class="footer">
+      <div class="container">
+        <div class="footer__menu">
+          <nav>
+            <ul class="footer__menu-grid">
+              <li><a href="confidents.html">Конфиденциальность</a></li>
+              <li><a href="contract.html">Договор</a></li>
+              <li><a href="rules.html">Правила посещения</a></li>
+              <li><a href="safety.html">Техника безопасности</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
     </section>
