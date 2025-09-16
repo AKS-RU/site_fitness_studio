@@ -260,7 +260,7 @@ h2 {
 .content {
 }
 .content .container {
-  background-image: url(../img/image_3.png);
+  background-image: url(../img/image_3.webp);
   width: 100%;
   height: 998px;
   margin-bottom: 97px;
@@ -295,7 +295,7 @@ h2 {
 /* teachers */
 .teachers .container {
   padding-top: 30px;
-  background-image: url(../img/bcg_teachers.png);
+  background-image: url(../img/bcg_teachers.webp);
 }
 .teachers__title-wrapper {
   margin: 0 auto;
@@ -389,7 +389,7 @@ h2 {
 }
 /* schedule */
 .schedule .container {
-  background: url(../img/schedule.png);
+  background: url(../img/schedule.webp);
   height: 982px;
 }
 .schedule,
@@ -474,7 +474,7 @@ block {
 }
 /* request */
 .request .container {
-  background-image: url(../img/request.png);
+  background-image: url(../img/request.webp);
 }
 .request .text {
   text-align: center;
