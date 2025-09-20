@@ -351,6 +351,9 @@ h2 {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   background: #fff;
 }
+#teachers {
+  scroll-margin-top: 130px;
+}
 /* about_studio */
 .about_stidio .container {
   text-align: center;
@@ -412,8 +415,10 @@ block {
   line-height: 88px;
 }
 /* contacts */
-.contacts {
+#contacts {
+  scroll-margin-top: 80px;
 }
+
 .contacts .container {
   position: relative;
   background: #f5a7cc;
