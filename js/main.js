@@ -1,4 +1,6 @@
+//=====================
 // Ввод номера телефона
+//=====================
 const phoneInput = document.getElementById("phone");
 
 // Подставляем +7 при фокусировке в поле
@@ -66,4 +68,38 @@ phoneInput.addEventListener("paste", function (e) {
   const pasted = (e.clipboardData || window.clipboardData).getData("text");
   const clean = pasted.replace(/[^+\d]/g, "");
   document.execCommand("insertText", false, clean);
+});
+
+//===========
+// Ввод имени
+//===========
+const nameInput = document.getElementById("name");
+
+nameInput.addEventListener("input", function (e) {
+  let value = e.target.value;
+
+  // Оставляем только русские буквы: А-Яа-яёЁ
+  const cleaned = value.replace(/[^А-Яа-яёЁ]/g, "");
+
+  if (cleaned) {
+    // Переводим всё в нижний регистр и делаем первую заглавной
+    const formatted = cleaned[0].toUpperCase() + cleaned.slice(1).toLowerCase();
+
+    // Обновляем значение
+    e.target.value = formatted;
+  } else {
+    // Если ничего нет — оставляем пустым
+    e.target.value = "";
+  }
+});
+
+// Защита от вставки недопустимого текста (Ctrl+V)
+nameInput.addEventListener("paste", function (e) {
+  e.preventDefault();
+  const pasted = (e.clipboardData || window.clipboardData).getData("text");
+  const cleaned = pasted.replace(/[^А-Яа-яёЁ]/g, "");
+  const formatted = cleaned
+    ? cleaned[0].toUpperCase() + cleaned.slice(1).toLowerCase()
+    : "";
+  document.execCommand("insertText", false, formatted);
 });
