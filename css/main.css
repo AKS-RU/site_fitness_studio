@@ -148,9 +148,21 @@ h2 {
 .header .container {
   background: #f5a7cc;
 }
+.header-top-fixed {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 1600px;
+  width: 100%;
+  z-index: 1000;
+  background-color: #f5a7cc;
+}
+
 .header__top {
   padding-top: 24px;
   display: flex;
+  justify-content: center;
 }
 .header__top-left {
   display: flex;
@@ -193,6 +205,7 @@ h2 {
   border-radius: 50%;
 }
 .header__title {
+  margin-top: 127px;
   position: relative;
 }
 .header__title h4 {
@@ -352,7 +365,7 @@ h2 {
   background: #fff;
 }
 #teachers {
-  scroll-margin-top: 130px;
+  scroll-margin-top: 280px;
 }
 /* about_studio */
 .about_stidio .container {
@@ -390,6 +403,9 @@ h2 {
   padding-top: 0;
   margin-top: -53px;
 }
+#about_us {
+  scroll-margin-top: 120px;
+}
 /* schedule */
 .schedule .container {
   background: url(../img/schedule.webp);
@@ -416,7 +432,7 @@ block {
 }
 /* contacts */
 #contacts {
-  scroll-margin-top: 80px;
+  scroll-margin-top: 200px;
 }
 
 .contacts .container {
